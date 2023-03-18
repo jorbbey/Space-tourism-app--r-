@@ -39,7 +39,7 @@ const TechSlide = ( { slides, autoPlay } ) => {
   return (
     <div className=" w-[95%] md:w-full h-auto flex flex-col-reverse md:flex-row justify-around items-center" style={{margin: '0 auto'}}>
       <div className="flex md:flex-col justify-around w-5/6 md:w-20">
-        { slides.map( ( slide, index ) => (
+        { slides.map( ( index ) => (
             <span
             className={ `material-symbols-outlined  border border-white rounded-full h-5 w-5 md:h-10 md:w-10 lg:h-14 lg:w-14 my-2 text-transparent mx-4 cursor-pointer ${ activeIndex === index ? 'bg-gray-200' : 'transparent'
                 }   ` }
@@ -59,7 +59,7 @@ const TechSlide = ( { slides, autoPlay } ) => {
         <div className="text-gray-300">{slides[activeIndex].text}</div>
       </div>
       <div className="flex justify-center items-center my-20 md:my-0 md:w-96 lg:w-[500px]">
-        <img src={slides[activeIndex].image} className='w-5/6 md:w-3/4 lg:w-5/6 rounded-lg' />
+        <img src={slides[activeIndex].image} alt='imege' className='w-5/6 md:w-3/4 lg:w-5/6 rounded-lg' />
       </div>
     </div>
   )

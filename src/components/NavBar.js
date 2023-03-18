@@ -55,7 +55,7 @@ const NavBar = () => {
         'hidden md:flex justify-center md:justify-start lg:justify-center items-center w-full md:w-2/3 lg:1/2 top-0 relative h-16 text-white shadow-3xl' }
       >
         <div className="flex flex-col md:flex-row justify-around items-center bg-transparent w-5/6 md:w-full lg:w-5/6 h-full text-lg">
-          { navLinks.map( ( { title, number, path, id } ) => (
+          { navLinks.map( ( { title, number, path } ) => (
             <Link
               to={ path }
               key={ title }

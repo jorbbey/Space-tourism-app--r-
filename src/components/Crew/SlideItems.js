@@ -61,7 +61,7 @@ const SlideItems = ({ slides, autoPlay }) => {
       </div>
       <div className='flex justify-center items-center w-full my-64 md:my-20 h-6'>
         <div className="flex w-fit">
-          { slides.map( ( slide, index ) => (
+          { slides.map( ( index ) => (
             <span
               className={ `material-symbols-outlined h-[15px] w-[15px] text-transparent mx-4 rounded-full cursor-pointer ${ activeIndex === index ? 'bg-gray-500' : 'bg-gray-200'
                 }   ` }
