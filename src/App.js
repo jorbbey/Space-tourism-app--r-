@@ -1,6 +1,5 @@
 import './style.css'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Route, Routes } from 'react-router-dom'
 import { createContext } from 'react'
 import Home from './components/Home'

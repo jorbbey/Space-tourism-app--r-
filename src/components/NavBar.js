@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/shared/logo.svg'
 import menuOpen from '../assets/shared/icon-hamburger.svg'

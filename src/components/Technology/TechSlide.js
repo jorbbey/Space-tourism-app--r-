@@ -6,8 +6,6 @@ import { useRef } from 'react'
 const TechSlide = ( { slides, autoPlay } ) => {
   
   const [ activeIndex, setActiveIndex ] = useState( 0 )
-  const serial = [ 1, 2, 3 ]
-
 
   const prevSlide = () => {
     const firstSlide = activeIndex === 0
