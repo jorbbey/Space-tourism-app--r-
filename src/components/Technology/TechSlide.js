@@ -7,11 +7,11 @@ const TechSlide = ( { slides, autoPlay } ) => {
   
   const [ activeIndex, setActiveIndex ] = useState( 0 )
 
-  const prevSlide = () => {
-    const firstSlide = activeIndex === 0
-    const newIndex = firstSlide ? slides.length - 1 : activeIndex - 1
-    setActiveIndex( newIndex )
-  }
+  // const prevSlide = () => {
+  //   const firstSlide = activeIndex === 0
+  //   const newIndex = firstSlide ? slides.length - 1 : activeIndex - 1
+  //   setActiveIndex( newIndex )
+  // }
 
   const nextSlide = () => {
     const lastSlide = activeIndex === slides.length - 1
